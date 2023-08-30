@@ -17,9 +17,7 @@ import lombok.Setter;
 
 @Data
 @Entity
-@Getter
-@Setter
-@Table(name = "country")
+@Table(name = "country_details")
 public class Country {
 	
 	@Id
@@ -37,6 +35,6 @@ public class Country {
 	// TODO: Set up one to many with states
 	@OneToMany(mappedBy = "country")
 	@JsonIgnore
-	private List<State> states;
+	private List<State> state;
 
 }

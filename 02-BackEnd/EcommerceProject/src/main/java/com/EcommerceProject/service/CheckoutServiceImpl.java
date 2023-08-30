@@ -3,6 +3,7 @@ package com.EcommerceProject.service;
 import java.util.Set;
 import java.util.UUID;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.EcommerceProject.dao.CustomerRepository;
@@ -16,6 +17,7 @@ import jakarta.transaction.Transactional;
 
 @Service
 public class CheckoutServiceImpl implements CheckoutService{
+	
 	
 	private CustomerRepository customerRepository;
 	
@@ -60,8 +62,7 @@ public class CheckoutServiceImpl implements CheckoutService{
 		
 		return UUID.randomUUID().toString();
 		
-		
+	
 	}
-
 
 }

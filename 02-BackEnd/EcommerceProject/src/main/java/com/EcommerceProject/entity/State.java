@@ -13,9 +13,9 @@ import lombok.Getter;
 import lombok.Setter;
 @Data
 @Entity
+@Table(name = "state")
 @Getter
 @Setter
-@Table(name = "state")
 
 public class State {
 	
@@ -28,7 +28,7 @@ public class State {
 	private String name;
 	
 	@ManyToOne
-	@JoinColumn(name = "country_id")
+	@JoinColumn(name = "country")
 	private Country country;
 
 	

@@ -18,6 +18,7 @@ import lombok.Setter;
 @Table(name = "product_category")
 @Getter
 @Setter
+
 public class ProductCategory {
 
 	@Id
